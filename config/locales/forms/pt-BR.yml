@@ -1,0 +1,9 @@
+pt-BR:
+  forms:
+    consortium_plan:
+      title: 'Consórcio Honda'
+      subtitle: 'Descubra qual o Número da Cota'
+      loteric_number: 'Sorteio da Loteria Federal'
+      last_sorted: 'Útimo Sorteio'
+      person_count: 'Total de Participantes'
+      button_submit: 'Calcular'

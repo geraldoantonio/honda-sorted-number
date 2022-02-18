@@ -1,0 +1,31 @@
+<form id="sorted_number" action="#" class='form bg-dark text-white p-5 rounded-1'>
+  <div class="mb-3">
+    <%= label_tag(:loteric_number, class: 'form-label') do %>
+      <%= I18n.t(:loteric_number, scope: 'forms.consortium_plan') %>
+      <%= link_to(I18n.t(:last_sorted, scope: 'forms.consortium_plan'), 
+                  redirect_to_caixa_last_result_redirect_path, 
+                  target: "_blank") %>
+    <% end %>
+
+    <select id="loteric_number" class="form-select"></select>
+  </div>
+
+  <div class="mb-3">
+    <%= label_tag(:person_count, 
+                  I18n.t(:person_count, scope: 'forms.consortium_plan'),
+                  class: "form-label") %>
+    <%= select_tag(:person_count, 
+                    options_for_select(ConsortiumPlan.person_count_for_select),
+                    class: "form-select") %>
+  </div>
+
+  <hr>
+  <div class="row">
+    <div class="col">
+      <%= button_tag(I18n.t(:button_submit, scope: 'forms.consortium_plan'), type: 'submit', class: "btn btn-primary") %>
+    </div>
+    <div class="col">
+      <div id="result_quota_number" class="d-none"></div>
+    </div>
+  </div>
+</form>

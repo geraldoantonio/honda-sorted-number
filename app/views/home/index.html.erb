@@ -1,38 +1,25 @@
 <% content_for :left_bar do %>
-  <div> Adsence </div>
-  <div>
-    <p>Minha Cota: 157</p>
-  </div>
+  <% 3.times do %>
+    <div class="card" style="width: 18rem;">
+      <%= image_tag 'google-ads.png', class: "card-img-top" %>
+    </div>
+  <% end %>
 <% end %>
 
 <section class="col p-3">
-  <div class='d-flex flex-column text-center mb-5'>
-    <h1 class='text-danger'>Consórcio Honda</h1>
-    <h5>Descubra qual o Número da Cota</h5>
+  <%= render partial: 'header' %>
+  <%= render partial: 'form' %>
+
+  <div>
+    <div> Adsence </div>
+    <div><p>Minha Cota: 157</p></div>
   </div>
-
-  <form id="sorted_number" action="#" class='form'>
-    <div class="mb-3">
-      <label for="select_loteric_number" class="form-label">
-        Sorteio da Loteria Federal
-        <%= link_to 'Último Sorteio', redirect_to_caixa_last_result_redirect_path, target: "_blank" %>
-      </label>
-      <select id="select_loteric_number" class="form-select"></select>
-    </div>
-
-    <div class="mb-3">
-      <label for="select_total_person" class="form-label">Total de Participantes</label>
-      <select id="select_total_person" class="form-select"></select>
-    </div>
-
-    <hr>
-    <div class="row">
-      <div class="col">
-        <button type="submit" class="btn btn-primary">Calcular</button>
-      </div>
-      <div class="col">
-        <div id="result_quota_number" class="d-none"></div>
-      </div>
-    </div>
-  </form>
 </section>
+
+<% content_for :right_bar do %>
+  <% 3.times do %>
+    <div class="card" style="width: 18rem;">
+      <%= image_tag 'google-ads.png', class: "card-img-top" %>
+    </div>
+  <% end %>
+<% end %>
