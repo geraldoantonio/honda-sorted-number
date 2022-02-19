@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   root "home#index"
   
   get '/redirect_to_caixa_last_result_redirect', to: redirect(AppConstants::CAIXA_LAST_RESULT_URL)
+  get '/sorted_number', to: 'home#sorted_number'
 end
