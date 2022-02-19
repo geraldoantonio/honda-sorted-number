@@ -22,12 +22,18 @@
   </div>
 
   <hr>
-  <div class="row">
+  <div class="d-flex flex-column gap-3 align-intes-center">
     <div class="col">
       <%= button_tag(I18n.t(:button_submit, scope: 'forms.consortium_plan'), type: 'submit', class: "btn btn-primary") %>
     </div>
+  
     <div class="col">
-      <div id="result_quota_number" class="d-none"></div>
+      <div id="result_quota_number" class="d-none">
+        <label>
+          <%= I18n.t(:result_text, scope: 'forms.consortium_plan') %> 
+        </label>
+        <span></span>
+      </div>
     </div>
   </div>
 </form>

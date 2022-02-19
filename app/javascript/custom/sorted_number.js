@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const printResult = (result, element) => {
     const resultElement = document.querySelector(element);
-    resultElement.innerHTML = `Número da cota: ${result}`;
+    resultElement.getElementsByTagName('span')[0].innerHTML = `${result}`;
     resultElement.classList.remove('d-none');
   }
 });

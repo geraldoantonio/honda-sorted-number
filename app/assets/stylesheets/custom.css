@@ -1,9 +1,15 @@
 #result_quota_number{
-  background-color: blanchedalmond;
+  background-color: rgb(255, 235, 205);
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  color: red;
-  font-weight: 400;
   border-radius: 0.2rem;
+}
+#result_quota_number > label {
+  font-weight: 400;
+  color: #000;
+}
+#result_quota_number > span {
+  font-weight: 400;
+  color: #f00;
 }

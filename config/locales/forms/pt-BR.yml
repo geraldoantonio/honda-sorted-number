@@ -6,4 +6,5 @@ pt-BR:
       loteric_number: 'Sorteio da Loteria Federal'
       last_sorted: 'Útimo Sorteio'
       person_count: 'Total de Participantes'
+      result_text: 'Número da cota sorteada:'
       button_submit: 'Calcular'
