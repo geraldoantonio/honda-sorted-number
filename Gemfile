@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby File.read('.ruby-version').strip { '3.0.0' }
+ruby File.read('.ruby-version').strip || '3.0.0'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.2', '>= 7.0.2.2'
@@ -65,6 +65,7 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 
-  # Solargraph provides a comprehensive suite of tools for Ruby programming: intellisense, diagnostics, inline documentation, and type checking.
+  # Solargraph provides a comprehensive suite of tools for Ruby programming:
+  # intellisense, diagnostics, inline documentation, and type checking.
   gem 'solargraph'
 end

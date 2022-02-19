@@ -12,3 +12,6 @@ AllCops:
     - "config.ru"
     - "Rakefile"
   SuggestExtensions: false
+
+Style/Documentation:
+  Enabled: false
