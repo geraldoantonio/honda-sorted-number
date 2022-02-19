@@ -69,3 +69,7 @@ group :development do
   # intellisense, diagnostics, inline documentation, and type checking.
   gem 'solargraph'
 end
+
+# Use Tailwind CSS, Bootstrap, Bulma, PostCSS, or Dart Sass
+# to bundle and process your CSS, then deliver it via the asset pipeline in Rails.
+gem 'cssbundling-rails'

@@ -42,3 +42,19 @@ ConsortiumPlan.create([
     installments: 60
   }
 ])
+
+FederalResult.create([
+  {concurse: 5639, date: Date.new(2022, 2, 16), result: 49005},
+  {concurse: 5638, date: Date.new(2020, 2, 12), result: 57951},
+  {concurse: 5637, date: Date.new(2020, 2, 9), result: 23992},
+  {concurse: 5636, date: Date.new(2020, 2, 5), result: 11226},
+  {concurse: 5635, date: Date.new(2020, 2, 2), result: 59260},
+  {concurse: 5634, date: Date.new(2020, 1, 29), result: 8107},
+  {concurse: 5633, date: Date.new(2020, 1, 26), result: 96915},
+  {concurse: 5632, date: Date.new(2020, 1, 22), result: 85987},
+  {concurse: 5631, date: Date.new(2020, 1, 19), result: 05146},
+  {concurse: 5630, date: Date.new(2020, 1, 15), result: 32255},
+  {concurse: 5629, date: Date.new(2020, 1, 12), result: 84241},
+  {concurse: 5628, date: Date.new(2020, 1, 8), result: 99210},
+  {concurse: 5627, date: Date.new(2020, 1, 5), result: 32235}
+])

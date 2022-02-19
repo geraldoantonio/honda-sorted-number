@@ -1,0 +1,9 @@
+#result_quota_number{
+  background-color: blanchedalmond;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: red;
+  font-weight: 400;
+  border-radius: 0.2rem;
+}

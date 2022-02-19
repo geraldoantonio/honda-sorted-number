@@ -7,14 +7,16 @@
                   target: "_blank") %>
     <% end %>
 
-    <select id="loteric_number" class="form-select"></select>
+    <%= select_tag(:loteric_number,
+                    options_for_select(FederalResult.result_for_select,),
+                    class: "form-select") %>
   </div>
 
   <div class="mb-3">
-    <%= label_tag(:person_count, 
+    <%= label_tag(:person_count,
                   I18n.t(:person_count, scope: 'forms.consortium_plan'),
                   class: "form-label") %>
-    <%= select_tag(:person_count, 
+    <%= select_tag(:person_count,
                     options_for_select(ConsortiumPlan.person_count_for_select),
                     class: "form-select") %>
   </div>
