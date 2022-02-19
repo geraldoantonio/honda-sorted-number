@@ -9,4 +9,6 @@ AllCops:
     - "tmp/**/*"
     - "db/**/*"
     - "vendor/bundle/**/*"
+    - "config.ru"
+    - "Rakefile"
   SuggestExtensions: false
