@@ -73,4 +73,6 @@ end
 # Use Tailwind CSS, Bootstrap, Bulma, PostCSS, or Dart Sass
 # to bundle and process your CSS, then deliver it via the asset pipeline in Rails.
 gem 'cssbundling-rails'
+gem 'devise', '~> 4.8'
+gem 'rails-i18n', '~> 7.0.0'
 gem 'rollbar'
