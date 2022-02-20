@@ -8,13 +8,13 @@ module Webscraper
       uri_parse = URI.parse(LOTOLOTO_FEDERAL_RESULT_URL)
       nokogiri_doc = Nokogiri::HTML(uri_parse.open)
 
-      @result = []
+      federal_result = []
 
       multiple_sorted = nokogiri_doc.css('div.sorteios.multiplo')
       multiple_sorted.each do |result|
         itens = result.css('div.item')
         itens.each do |item|
-          @result << {
+          federal_result << {
             concurse: item.css('div.titulo').text.strip.split.last,
             date: item.css('div.data').text.strip,
             result: item.css('div.numeros > .wrapExtracao:nth-child(1) > .num').text.strip
@@ -22,7 +22,7 @@ module Webscraper
         end
       end
 
-      @result
+      federal_result
     end
   end
 end
