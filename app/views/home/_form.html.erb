@@ -24,6 +24,7 @@
   <hr>
   <div class="d-flex flex-column gap-3 align-intes-center">
     <div class="col">
+      <%= render partial: 'how_it_works/button' %>
       <%= button_tag(I18n.t(:button_submit, scope: 'forms.consortium_plan'), type: 'submit', class: "btn btn-primary") %>
     </div>
   
@@ -37,3 +38,4 @@
     </div>
   </div>
 </form>
+
