@@ -2,7 +2,7 @@
 
 module Webscraper
   module FederalResult
-    LOTOLOTO_FEDERAL_RESULT_URL = 'https://www.lotoloto.com.br/sorteios/federal/'
+    LOTOLOTO_FEDERAL_RESULT_URL = 'https://www.lotoloto.com.br/en/results/federal/'
 
     def self.by_lotoloto # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
       uri_parse = URI.parse(LOTOLOTO_FEDERAL_RESULT_URL)
@@ -15,8 +15,8 @@ module Webscraper
         itens = result.css('div.item')
         itens.each do |item|
           federal_result << {
-            concurse: item.css('div.titulo').text.strip.split.last,
-            date: item.css('div.data').text.strip,
+            concurse: item.css('div.data').text.strip.split.last,
+            date: item.css('div.titulo').text.strip.to_date,
             result: item.css('div.numeros > .wrapExtracao:nth-child(1) > .num').text.strip
           }
         end
