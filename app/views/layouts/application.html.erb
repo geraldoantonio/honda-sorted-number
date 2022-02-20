@@ -13,20 +13,28 @@
   <body>
     <main class="container-fluid mt-5">
       <div class="row">
+        <% if content_for?(:left_bar) %>
+          <div class="col d-flex flex-column align-items-center justify-content-start gap-2 ">
+            <%= yield :left_bar %>
+          </div>
+        <% end %>
+
         <div class="col d-flex flex-column align-items-center justify-content-start gap-2 ">
-          <%= yield :left_bar %>
+          <%= yield %>
         </div>
 
-        <%= yield %>
+        <% if content_for?(:right_bar) %>
+          <div class="col d-flex flex-column align-items-center justify-content-start gap-2 ">
+            <%= yield :right_bar %>
+          </div>
+        <% end %>
+      </div>
 
-        <div class="col d-flex flex-column align-items-center justify-content-start gap-2 ">
-          <%= yield :right_bar %>
+      <% if content_for?(:adsence) %>
+        <div class="container-fluid my-4 d-flex justify-content-around flex-wrap gap-2">
+          <%= yield :adsence %>
         </div>
-      </div>
-
-      <div class="container-fluid my-4 d-flex justify-content-around flex-wrap">
-        <%= yield :adsence %>
-      </div>
+      <% end %>
 
       <footer class="container-fluid d-flex justify-content-center mt-3">
         <p> By Geraldo Júnior </p>
