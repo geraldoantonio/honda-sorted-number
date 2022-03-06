@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_02_19_180159) do
+ActiveRecord::Schema[7.0].define(version: 2022_03_06_015126) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -20,7 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_02_19_180159) do
     t.integer "installments"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_consortium_plans_on_name", unique: true
+    t.index ["name", "installments"], name: "index_consortium_plans_on_name_and_installments", unique: true
   end
 
   create_table "federal_results", force: :cascade do |t|

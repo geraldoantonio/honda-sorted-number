@@ -40,7 +40,44 @@ ConsortiumPlan.create([
     name: "Super Legal",
     person_count: 720,
     installments: 60
+  }, {
+    name: "Super Legal",
+    person_count: 864,
+    installments: 72
+  }, {
+    name: "Normal",
+    person_count: 48,
+    installments: 12
+  }, {
+    name: "Normal",
+    person_count: 100,
+    installments: 25
+  }, {
+    name: "Normal",
+    person_count: 144,
+    installments: 36
+  }, {
+    name: "Normal",
+    person_count: 200,
+    installments: 50
+  }, {
+    name: "Legal",
+    person_count: 144,
+    installments: 36
+  }, {
+    name: "Legal",
+    person_count: 200,
+    installments: 50
+  }, {
+    name: "Legal",
+    person_count: 720,
+    installments: 60
+  }, {
+    name: "Legal",
+    person_count: 864,
+    installments: 72
   }
+
 ])
 
 FederalResult.create([
