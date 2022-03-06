@@ -16,9 +16,11 @@
     <%= label_tag(:person_count,
                   I18n.t(:person_count, scope: 'forms.consortium_plan'),
                   class: "form-label") %>
-    <%= select_tag(:person_count,
-                    options_for_select(ConsortiumPlan.person_count_for_select),
-                    class: "form-select") %>
+
+    <%= text_field_tag(:person_count, nil, class: "form-control", list: "person_count_options") %>
+    <datalist id='person_count_options'>
+      <%= options_for_select(ConsortiumPlan.person_count_for_select) %>
+    </datalist> 
   </div>
 
   <hr>

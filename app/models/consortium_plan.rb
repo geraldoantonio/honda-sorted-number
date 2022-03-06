@@ -8,7 +8,7 @@ class ConsortiumPlan < ApplicationRecord
 
   def self.person_count_for_select
     all.order_by_name_and_installments.map do |plan|
-      ["#{plan.name} - (Participantes: #{plan.person_count} em #{plan.installments} meses)", plan.person_count]
+      ["#{plan.name} - #{plan.installments} parcelas", plan.person_count]
     end
   end
 end
