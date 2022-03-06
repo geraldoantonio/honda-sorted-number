@@ -7,77 +7,33 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 ConsortiumPlan.create([
-  {
-    name: "Vou de Honda",
-    person_count: 650,
-    installments: 25
-  }, {
-    name: "Conquista",
-    person_count: 960,
-    installments: 60
-  },
-  {
-    name: "Mega Fácil",
-    person_count: 936,
-    installments: 72
-  }, {
-    name: "Mega Fácil",
-    person_count: 780,
-    installments: 60
-  }, {
-    name: "Mega Fácil",
-    person_count: 650,
-    installments: 50
-  }, {
-    name: "Super Legal",
-    person_count: 432,
-    installments: 36
-  }, {
-    name: "Super Legal",
-    person_count: 600,
-    installments: 50
-  }, {
-    name: "Super Legal",
-    person_count: 720,
-    installments: 60
-  }, {
-    name: "Super Legal",
-    person_count: 864,
-    installments: 72
-  }, {
-    name: "Normal",
-    person_count: 48,
-    installments: 12
-  }, {
-    name: "Normal",
-    person_count: 100,
-    installments: 25
-  }, {
-    name: "Normal",
-    person_count: 144,
-    installments: 36
-  }, {
-    name: "Normal",
-    person_count: 200,
-    installments: 50
-  }, {
-    name: "Legal",
-    person_count: 144,
-    installments: 36
-  }, {
-    name: "Legal",
-    person_count: 200,
-    installments: 50
-  }, {
-    name: "Legal",
-    person_count: 720,
-    installments: 60
-  }, {
-    name: "Legal",
-    person_count: 864,
-    installments: 72
-  }
-
+  { name: "Vou de Honda", person_count: 312, installments: 12 },
+  { name: "Vou de Honda", person_count: 650, installments: 25 },
+  { name: "Vou de Honda", person_count: 960, installments: 48 },
+  { name: "Vou de Honda", person_count: 960, installments: 80 },
+  { name: "Conquista", person_count: 936, installments: 36 },
+  { name: "Conquista", person_count: 960, installments: 60 },
+  { name: "Mega Fácil", person_count: 936, installments: 72 },
+  { name: "Mega Fácil", person_count: 780, installments: 60 },
+  { name: "Mega Fácil",  person_count: 650,  installments: 50 },
+  { name: "Super Legal", person_count: 432, installments: 36 },
+  { name: "Super Legal", person_count: 600, installments: 50 },
+  { name: "Super Legal", person_count: 720, installments: 60 },
+  { name: "Super Legal", person_count: 864, installments: 72 },
+  { name: "Normal", person_count: 48, installments: 12},
+  { name: "Normal", person_count: 100, installments: 25},
+  { name: "Normal", person_count: 144, installments: 36},
+  { name: "Normal", person_count: 200, installments: 50},
+  { name: "Legal", person_count: 144,  installments: 36},
+  { name: "Legal", person_count: 200,  installments: 50},
+  { name: "Legal", person_count: 720,  installments: 60},
+  { name: "Legal", person_count: 864,  installments: 72},
+  { name: "Multichances", person_count: 936, installments: 36},
+  { name: "Multichances", person_count: 960, installments: 60},
+  { name: "Especial", person_count: 504, installments: 72},
+  { name: "Scooter", person_count: 540, installments: 36},
+  { name: "Scooter", person_count: 720, installments: 60},
+  { name: "TRX e CRF", person_count: 180, installments: 60}
 ])
 
 FederalResult.create([
