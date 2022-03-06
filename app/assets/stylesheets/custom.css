@@ -1,23 +1,42 @@
-#result_quota_number{
+#result_quota_number {
   background-color: rgb(255, 235, 205);
   align-items: center;
   justify-content: center;
   padding: 1rem;
   border-radius: 0.2rem;
 }
-#result_quota_number > label {
+
+#result_quota_number>label {
   font-weight: 400;
   color: #000;
 }
-#result_quota_number > span {
+
+#result_quota_number>span {
   font-weight: 400;
   color: #f00;
 }
 
 body {
-  background-image: url('./background-honda-cbr.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-image: url('./background/mobile.jpg');
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    background-image: url('./background/tablet.jpg');
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    background-image: url('./background/full.jpg');
+  }
 }
