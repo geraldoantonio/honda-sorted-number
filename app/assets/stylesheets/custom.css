@@ -1,3 +1,9 @@
+#disqus_thread {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 3rem;
+}
+
 #result_quota_number {
   background-color: rgb(255, 235, 205);
   align-items: center;
