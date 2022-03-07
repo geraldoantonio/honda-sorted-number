@@ -1,5 +1,6 @@
 pt-BR:
   site_name: &site_name Cota Sorteada
+  disqus_title: Comentários
   home:
     index:
       title: Honda Consórcio

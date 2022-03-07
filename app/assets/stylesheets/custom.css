@@ -1,7 +1,7 @@
-#disqus_thread {
-  width: 100%;
+section.comments{
   background-color: whitesmoke;
-  padding: 3rem;
+  padding: 3rem !important;
+  border-radius: 0.3rem;
 }
 
 #result_quota_number {

@@ -36,7 +36,14 @@
         </div>
       <% end %>
 
-      <footer class="container-fluid d-flex justify-content-center mt-3">
+      <section class="comments container-fluid my-4 d-flex flex-column justify-content-center px-0 py-3">
+        <h3 class='text-secondary text-secondary'>
+          <%= I18n.t("disqus_title") %>
+        </h3>
+        <div id="disqus_thread"></div>
+      </section>
+
+      <footer class="container-fluid d-flex justify-content-center my-3">
         <div><%= developer_profile_link %></div>
       </footer>
     </main>
