@@ -8,10 +8,3 @@ pt-BR:
       person_count: 'Total de Participantes'
       result_text: 'Número da cota sorteada:'
       button_submit: 'Calcular'
-  how_it_works:
-    button:
-      title: 'Como funciona?'
-      instructions: '
-        Selecione o plano do seu consórcio, em seguida o concurso da loteria federal
-        com a data anterior mais próxima à assembléia do consórcio. 
-        Ex: data da assembléia(18/02/2022) selecione o concurso do dia(16/02/2022)'

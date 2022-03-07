@@ -3,3 +3,10 @@ pt-BR:
     name: Geraldo Júnior
     profile_url: https://about.me/geraldo.junior
     btn_title: Veja meu perfil no About.me
+  how_it_works:
+    button:
+      title: 'Como funciona?'
+      instructions: '
+        Selecione o plano do seu consórcio, em seguida o concurso da loteria federal
+        com a data anterior mais próxima à assembléia do consórcio. 
+        Ex: data da assembléia(18/02/2022) selecione o concurso do dia(16/02/2022)'

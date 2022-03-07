@@ -18,4 +18,15 @@ module ApplicationHelper
             target: :_blank,
             rel: :noopener)
   end
+
+  def how_it_works_button
+    link_to('#', class: 'btn btn-secondary',
+                 title: I18n.t(:instructions, scope: 'how_it_works.button'),
+                 data: {
+                   'bs-toggle': 'tooltip',
+                   'bs-placement': 'top'
+                 }) do
+      I18n.t(:title, scope: 'how_it_works.button')
+    end
+  end
 end

@@ -1,6 +1,5 @@
-<%= form_with(id: "sorted_number", 
-              # action: "#", 
-              data: { :'sorted-number-url' => sorted_number_url },
+<%= form_with(id: "sorted_number",
+              data: { 'sorted-number-url' => sorted_number_url },
               class: 'form bg-dark text-white p-5 rounded-1 bg-opacity-75') do |f| %>
   <div class="mb-3">
     <%= f.label(:loteric_number, class: 'form-label') do %>
@@ -28,7 +27,7 @@
   <hr>
   <div class="d-flex flex-column gap-3 align-intes-center">
     <div class="col">
-      <%= render partial: 'how_it_works/button' %>
+      <%= how_it_works_button %>
       <%= f.submit(I18n.t(:button_submit, scope: 'forms.consortium_plan'), type: 'submit', class: "btn btn-primary") %>
     </div>
   
