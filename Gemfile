@@ -74,5 +74,6 @@ end
 # to bundle and process your CSS, then deliver it via the asset pipeline in Rails.
 gem 'cssbundling-rails'
 gem 'devise', '~> 4.8'
+gem 'httparty'
 gem 'rails-i18n', '~> 7.0.0'
 gem 'rollbar'
