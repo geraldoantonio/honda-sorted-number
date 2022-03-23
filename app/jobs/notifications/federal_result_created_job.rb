@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 module Notifications
-  class FederalResultCreatedJob < ApplicationJob
+  class FederalResultCreatedJob
+    include Sidekiq::Job
+
     SLACK_WEBHOOK_URL = ENV['SLACK_WEBHOOK_URL']
 
     def perform(federal_result_id)

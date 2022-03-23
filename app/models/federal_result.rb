@@ -19,6 +19,6 @@ class FederalResult < ApplicationRecord
   private
 
   def notification_admins!
-    Notifications::FederalResultCreatedJob.perform_later(id)
+    Notifications::FederalResultCreatedJob.perform_async(id)
   end
 end
